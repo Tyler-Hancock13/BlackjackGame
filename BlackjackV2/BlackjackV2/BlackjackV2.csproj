@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F0A1EEF3-4AA2-4D7F-BA8B-03B980547CC4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BlackjackV2</RootNamespace>
+    <AssemblyName>BlackjackV2</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Blackjack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Blackjack.Designer.cs">
+      <DependentUpon>Blackjack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Blackjack.resx">
+      <DependentUpon>Blackjack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BlackjackInfo\BlackjackInfo.csproj">
+      <Project>{5a29b7b0-2455-4963-b133-9f5e7289bb9c}</Project>
+      <Name>BlackjackInfo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="images\AceClubs.jpg" />
+    <Content Include="images\AceDiamonds.jpg" />
+    <Content Include="images\AceHearts.jpg" />
+    <Content Include="images\AceSpades.jpg" />
+    <Content Include="images\cardback.gif" />
+    <Content Include="images\EightClubs.jpg" />
+    <Content Include="images\EightDiamonds.jpg" />
+    <Content Include="images\EightHearts.jpg" />
+    <Content Include="images\EightSpades.jpg" />
+    <Content Include="images\FiveClubs.jpg" />
+    <Content Include="images\FiveDiamonds.jpg" />
+    <Content Include="images\FiveHearts.jpg" />
+    <Content Include="images\FiveSpades.jpg" />
+    <Content Include="images\FourClubs.jpg" />
+    <Content Include="images\FourDiamonds.jpg" />
+    <Content Include="images\FourHearts.jpg" />
+    <Content Include="images\FourSpades.jpg" />
+    <Content Include="images\JackClubs.jpg" />
+    <Content Include="images\JackDiamonds.jpg" />
+    <Content Include="images\JackHearts.jpg" />
+    <Content Include="images\JackSpades.jpg" />
+    <Content Include="images\KingClubs.jpg" />
+    <Content Include="images\KingDiamonds.jpg" />
+    <Content Include="images\KingHearts.jpg" />
+    <Content Include="images\KingSpades.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\NineClubs.jpg" />
+    <Content Include="images\NineDiamonds.jpg" />
+    <Content Include="images\NineHearts.jpg" />
+    <Content Include="images\NineSpades.jpg" />
+    <Content Include="images\PokerChips.jpg" />
+    <Content Include="images\QueenClubs.jpg" />
+    <Content Include="images\QueenDiamonds.jpg" />
+    <Content Include="images\QueenHearts.jpg" />
+    <Content Include="images\QueenSpades.jpg" />
+    <Content Include="images\royal-flush.jpg" />
+    <Content Include="images\SevenClubs.jpg" />
+    <Content Include="images\SevenDiamonds.jpg" />
+    <Content Include="images\SevenHearts.jpg" />
+    <Content Include="images\SevenSpades.jpg" />
+    <Content Include="images\SixClubs.jpg" />
+    <Content Include="images\SixDiamonds.jpg" />
+    <Content Include="images\SixHearts.jpg" />
+    <Content Include="images\SixSpades.jpg" />
+    <Content Include="images\TenClubs.jpg" />
+    <Content Include="images\TenDiamonds.jpg" />
+    <Content Include="images\TenHearts.jpg" />
+    <Content Include="images\TenSpades.jpg" />
+    <Content Include="images\ThreeClubs.jpg" />
+    <Content Include="images\ThreeDiamonds.jpg" />
+    <Content Include="images\ThreeHearts.jpg" />
+    <Content Include="images\ThreeSpades.jpg" />
+    <Content Include="images\TwoClubs.jpg" />
+    <Content Include="images\TwoDiamonds.jpg" />
+    <Content Include="images\TwoHearts.jpg" />
+    <Content Include="images\TwoSpades.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
